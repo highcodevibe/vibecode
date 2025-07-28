@@ -1,17 +1,26 @@
-Build a simple web application for generating temporary email addresses. The website should:
+# Temp Mail Web Application
 
-Allow users to generate a random email address (e.g., something like xyz123@tempmail.com).
+A simple web app for generating temporary email addresses and viewing received messages.
 
-Display received emails for that address in real-time or via polling.
+## Features
+- Generate random temp email addresses (e.g., xyz123@tempmail.com)
+- View received emails for the address (simulated)
+- In-memory storage, auto-expiry after 10 minutes
+- Node.js (Express) backend, React + Tailwind CSS frontend
 
-Store temporary email addresses and received messages in memory (for this prototype — no database).
+## Setup
 
-Automatically expire addresses and their messages after 10 minutes.
+### Backend
+```bash
+npm install
+npm start
+```
 
-Use Node.js (Express) for the backend and React for the frontend.
+### Frontend
+```bash
+cd frontend
+npm install
+npm start
+```
 
-Style the frontend with Tailwind CSS.
-
-Optionally simulate email reception using a mock email generator (since real SMTP handling is complex).
-
-Keep the structure modular and well-documented, so we can expand it later (e.g., real email integration).
+The frontend runs on port 3000, backend on 5000 by default.
